@@ -14,7 +14,7 @@ function draw() {
 	//let bgColor = '#CAD3C8';
 	background(0);
 	noStroke();
-	fill(0,167,47);
+	fill(255);
 	
 	if (capture.width > 0) {
 		let img = capture.get(0, 0, capture.width, capture.height);
@@ -27,7 +27,7 @@ function draw() {
 				const radius = 20 * darkness;
 				let sX = x * width / img.width;
 				let sY = y * height / img.height;
-				rect(sX, sY, radius);
+				rect(sX, sY, radius,radius);
 			}
 		}
 	}
