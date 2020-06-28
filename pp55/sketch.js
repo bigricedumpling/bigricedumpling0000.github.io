@@ -10,11 +10,11 @@ function setup() {
 
 
 function draw() {
-	let mainColor = '#2C3A47';
-	let bgColor = '#CAD3C8';
-	background(bgColor);
+	//let mainColor = '#2C3A47';
+	//let bgColor = '#CAD3C8';
+	background(0);
 	noStroke();
-	fill(mainColor);
+	fill(0,167,47);
 	
 	if (capture.width > 0) {
 		let img = capture.get(0, 0, capture.width, capture.height);
@@ -27,7 +27,7 @@ function draw() {
 				const radius = 20 * darkness;
 				let sX = x * width / img.width;
 				let sY = y * height / img.height;
-				circle(sX, sY, radius);
+				rect(sX, sY, radius);
 			}
 		}
 	}
