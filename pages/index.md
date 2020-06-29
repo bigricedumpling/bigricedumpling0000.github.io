@@ -37,7 +37,7 @@ GitHubPages::Dependencies.gems.each do |gem, version|
   s.add_dependency(gem, "= #{version}")
 end
 ```
-## FIRST
+## PROGRAM
 
 [**VIRTUAL EYES**](https://bigricedumpling.github.io/bigricedumpling0000.github.io/pp55)
 
