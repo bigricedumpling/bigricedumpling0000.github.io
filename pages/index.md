@@ -13,20 +13,23 @@ permalink: /
 
 #  ILLUSORY THEATRE OF THE EVERYDAY - 장수청 
 
-##  DIARYIES
-* 1
-* 2
-* 3
-  * 4
+##  虚拟之眼/Vitual Eyes
+
+* 表达内容 Express content
+               
+  * 通过虚拟动物的视角感知世界。
+                  表现这个世界的幻象性。
+perceive the world through the perspective of a virtual animal.
+Show the illusion of the world.
   
-  * 5
+  * 
   <p class="encrypted" id="G7D+0370pNmixIP1j7teCg1jtm9XCdOWYFH61lcM0LYWlT0hB3rS9raIs=">Encrypted content!</p>
 * 6
 $$
-NADH+Q+5\;H_{matrix}^{+}\rightarrow NAD^{+}+QH_{2}+4\;H_{intermembrane}^{+}\!
+A+A+1\;A_{a}^{+}\rightarrow A^{+}+A_{2}+1\;A_a}^{+}\!
 $$
 
-* 7
+
 
 ```ruby
 # Ruby code with syntax highlighting
