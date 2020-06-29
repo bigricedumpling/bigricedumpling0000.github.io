@@ -1,42 +1,71 @@
-"use strict";
+//import processing.video.*;
 let capture;
+var cellsize = 20; // Dimensions of each cell in the grid
+var cols, rows;
 
 function setup() {
-	createCanvas(windowWidth, windowHeight);
-	capture = createCapture(VIDEO);
-	capture.hide();
-	capture.size(1024, 768);
+	var width = 1024;
+  var height = 768;
+  cols = width/cellsize;             // Calculate # of columns
+  rows = height/cellsize;
+  createCanvas(windowWidth, windowHeight,WEBGL);
+  background(0);
+  //frameRate(600);
+  
+  video = createCapture(VIDEO);
+	video.hide();
+  video.size(width,height);
+  
 }
 
 
 function draw() {
-	//let mainColor = '#2C3A47';
-	//let bgColor = '#CAD3C8';
-	background(0);
-	noStroke();
-	fill(255);
-	
-	if (capture.width > 0) {
-		let img = capture.get(0, 0, capture.width, capture.height);
-		img.loadPixels();
-
-		const step = 15;
-		for (var y = step; y < img.height; y += step) {
-			for (var x = step; x < img.width; x += step) {
-				const darkness = getPixelDarknessAtPosition(img, x, y);
-				const radius = 20 * darkness;
-				let sX = x * width / img.width;
-				let sY = y * height / img.height;
-				rect(sX, sY, radius,radius);
-			}
-		}
-	}
+  scale(-1,1);
+  background(255);
+  //noStroke();
+  //fill(0);
+  
+  if (video.width > 0) {
+    let img = video.get(0, 0, video.width, video.height);
+    img.loadPixels();
+    //image(img,0,0);
+    for ( var i = 0; i < cols;i++) {
+      // Begin loop for rows
+      for ( var j = 0; j < rows;j++) {
+        var x = i*cellsize + cellsize/2; // x position
+        var y = j*cellsize + cellsize/2; // y position
+        var loc = x + y*width;           // Pixel array location
+        let c = img.get(x,y);    // Grab the color
+        // Calculate a z position as a function of mouseX and pixel brightness
+        var z = (mouseX/width)* brightness(c)*2 ;
+        // Translate to the location, set fill and stroke, and draw the rect
+        push();
+        translate(x-500,y-400,z);
+        noStroke();
+			
+				
+        fill(red(c),green(c),blue(c));
+        rectMode(CENTER);
+        
+        rect(0,0,cellsize,cellsize);
+        pop();
+    //int step = 15;
+    //for (int y = step; y < img.height; y += step) {
+      //for (int x = step; x < img.width; x += step) {
+       // float darkness = getPixelDarknessAtPosition(img, x, y);
+        //float radius = 10 * darkness;
+        //float sX = x * width / img.width;
+        //float sY = y * height / img.height;
+        //circle(sX, sY, radius);
+        
+      }
+    }
+  }
 }
 
 //ignore this, initially
-function getPixelDarknessAtPosition(img, x, y) {
-	const mirroring = true;
-	var i = y * img.width +  (mirroring ? (img.width - x - 1) : x);
-	return (255 - img.pixels[i * 4]) / 255;
-}
-
+//int getPixelDarknessAtPosition(PImage img,int x,int y) {
+ // Boolean mirroring = true;
+  //int i = y * img.width +  (mirroring ? (img.width - x - 1) : x);
+  //return (255 - img.pixels[i]) / 255;
+//}
