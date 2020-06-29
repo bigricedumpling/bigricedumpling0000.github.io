@@ -19,10 +19,10 @@ permalink: /
                
   * 通过虚拟动物的视角感知世界。
                   表现这个世界的幻象性。
-perceive the world through the perspective of a virtual animal.
-Show the illusion of the world.
+
   
-  * 
+  * perceive the world through the perspective of a virtual animal.
+     Show the illusion of the world.
   <p class="encrypted" id="G7D+0370pNmixIP1j7teCg1jtm9XCdOWYFH61lcM0LYWlT0hB3rS9raIs=">Encrypted content!</p>
 * 6
 $$
