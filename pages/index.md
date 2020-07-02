@@ -36,13 +36,8 @@ GitHubPages::Dependencies.gems.each do |gem, version|
 end
 ```
 ## PROGRAM
-```ruby
-# Ruby code with syntax highlighting
-[**VIRTUAL EYES**](https://bigricedumpling.github.io/bigricedumpling0000.github.io/pp55)
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
-[**VIRTUAL EYES**](https://bigricedumpling.github.io/bigricedumpling0000.github.io/pp55)
-[**EYES**](https://bigricedumpling.github.io/bigricedumpling0000.github.io/eyes)
+
+
+* [**VIRTUAL EYES**](https://bigricedumpling.github.io/bigricedumpling0000.github.io/pp55)
+* [**EYES**](https://bigricedumpling.github.io/bigricedumpling0000.github.io/eyes)
 
