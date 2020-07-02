@@ -6,15 +6,14 @@ var cols, rows;
 function setup() {
 	var width = 1024;
   var height = 768;
-  cols = width/cellsize;             // Calculate # of columns
-  rows = height/cellsize;
+  
   createCanvas(windowWidth, windowHeight,WEBGL);
   background(0);
   //frameRate(600);
   
   video = createCapture(VIDEO);
 	video.hide();
-  video.size(width,height);
+  video.size(windowWidth, windowHeight);
   
 }
 
@@ -24,7 +23,8 @@ function draw() {
   background(255);
   //noStroke();
   //fill(0);
-  
+  cols = windowWidth/cellsize;             // Calculate # of columns
+  rows = windowHeight/cellsize;
   if (video.width > 0) {
     let img = video.get(0, 0, video.width, video.height);
     img.loadPixels();
@@ -40,12 +40,12 @@ function draw() {
         var z = (mouseX/width)* brightness(c)*2 ;
         // Translate to the location, set fill and stroke, and draw the rect
         push();
-        translate(x-500,y-400,z);
+        translate(x-785,y-350,z);
         noStroke();
 			
 				
         fill(red(c),green(c),blue(c));
-        rectMode(CENTER);
+        //rectMode(CENTER);
         
         rect(0,0,cellsize,cellsize);
         pop();
@@ -69,3 +69,11 @@ function draw() {
   //int i = y * img.width +  (mirroring ? (img.width - x - 1) : x);
   //return (255 - img.pixels[i]) / 255;
 //}
+function keyPressed() {
+ if (keyCode === UP_ARROW) {
+    cellsize = cellsize+3;
+  } else if (keyCode === DOWN_ARROW) {
+    cellsize = cellsize-3;
+  }
+  
+}
