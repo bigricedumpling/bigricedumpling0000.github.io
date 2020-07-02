@@ -44,4 +44,5 @@ GitHubPages::Dependencies.gems.each do |gem, version|
 end
 ```
 [**VIRTUAL EYES**](https://bigricedumpling.github.io/bigricedumpling0000.github.io/pp55)
+[**EYES**](https://bigricedumpling.github.io/bigricedumpling0000.github.io/eyes)
 
