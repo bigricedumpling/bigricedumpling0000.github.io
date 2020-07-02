@@ -8,12 +8,12 @@ let maxNoise = 200; // maximal value for the parameter "noisiness" for the blobs
 
 function setup(){
 
-   createCanvas(windowWidth,windowHeight,WEBGL);
-   var width = windowWidth;
+     createCanvas(windowWidth,windowHeight,WEBGL);
+     var width = windowWidth;
 	 var height = windowHeight;
 	 colorMode(HSB, 1);
 	 //angleMode(DEGREES);
-   //noFill();
+     //noFill();
 	 //noLoop();
 	 kMax = random(0.6, 1.0);
 
@@ -21,20 +21,20 @@ function setup(){
 
 function draw(){
 	var r = 50;
-  background(0,0,0,0);
+    background(0);
 
 
 
-  dirY = (mouseY / float(height) - 0.5) * 50;
-  dirX = (mouseX / float(width) - 0.5) * 50;
-  directionalLight(204, 204, 204, -dirX, -dirY, -1);
-  //translate(width / 2, height / 2);
+    dirY = (mouseY / float(height) - 0.5) * 50;
+    dirX = (mouseX / float(width) - 0.5) * 50;
+    directionalLight(204, 204, 204, -dirX, -dirY, -1);
+    //translate(width / 2, height / 2);
 	noFill();
 	strokeWeight(0.1);
 	stroke(255);
-  sphere(r,8,8);
+    sphere(r,8,8);
 	strokeWeight(10);
-  ellipse(0,0,r*2,r*2);
+    ellipse(0,0,r*2,r*2);
 
 	strokeWeight(1);
 	ellipse(0,0,r*2.5,r*2.5);
@@ -48,7 +48,7 @@ function draw(){
 	let size = radius
 	let k = kMax
 	let noisiness = maxNoise
-  blob(size,0,0, k/2, t/2 , noisiness);
+    blob(size,0,0, k/2, t/2 , noisiness);
 
 	fill(255);
 	push();
@@ -69,8 +69,8 @@ function blob(size, xCenter, yCenter, k, t, noisiness) {
   for (let theta = 0; theta <= 360 + 2 * angleStep; theta += angleStep) {
     let r1, r2;
 
-		r1 = cos(theta)+1;
-		r2 = sin(theta)+1; // +1 because it has to be positive for the function noise
+	r1 = cos(theta)+1;
+	r2 = sin(theta)+1; // +1 because it has to be positive for the function noise
     let r = size + noise(k * r1,  k * r2, t) * noisiness;
     let x = xCenter + r * cos(theta);
     let y = yCenter + r * sin(theta);
