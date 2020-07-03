@@ -39,6 +39,6 @@ end
 ## PROGRAM
 
 
-* [**VIRTUAL EYES**](https://bigricedumpling.github.io/bigricedumpling0000.github.io/pp55)<p class="encrypted" id="G7D+0370pNmixIP1j7teCg1jtm9XCdOWYFH61lcM0LYWlT0hB3rS9raIs="> ← PRESS THIS！</p>
+* [**VIRTUAL EYES**](https://bigricedumpling.github.io/bigricedumpling0000.github.io/pp55)
 * [**EYES**](https://bigricedumpling.github.io/bigricedumpling0000.github.io/eyes)
 
