@@ -16,8 +16,7 @@ function setup(){
      //noFill();
 	 //noLoop();
 	 kMax = random(0.6, 1.0);
-	 let myCanvas = createCanvas(500, 500, WEBGL);
-     mainCanvas.parent(document.getElementById("canvasdiv"));
+	 
 }    
 
 function draw(){
