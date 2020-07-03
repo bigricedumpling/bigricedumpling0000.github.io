@@ -21,7 +21,7 @@ function setup(){
 
 function draw(){
 	var r = 50;
-    background(0);
+    background(0,0,0,0);
   
 	
  
