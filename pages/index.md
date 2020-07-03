@@ -23,23 +23,22 @@ permalink: /
 
   
   * perceive the world through the perspective of a virtual animal.Show the illusion of the world.
-  <p class="encrypted" id="G7D+0370pNmixIP1j7teCg1jtm9XCdOWYFH61lcM0LYWlT0hB3rS9raIs=">Encrypted content!</p>
-* 6
+* 
 $$
-A+A+1\;A_{a}^{+}\rightarrow A^{+}+A_{2}+1\;A_a}^{+}\!
+A
 $$
 
 
 
 ```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
+
+::Dependencies.bigricedumpling 
+ 
 end
 ```
 ## PROGRAM
 
 
-* [**VIRTUAL EYES**](https://bigricedumpling.github.io/bigricedumpling0000.github.io/pp55)
+* [**VIRTUAL EYES**](https://bigricedumpling.github.io/bigricedumpling0000.github.io/pp55)<p class="encrypted" id="G7D+0370pNmixIP1j7teCg1jtm9XCdOWYFH61lcM0LYWlT0hB3rS9raIs="> ← PRESS THIS！</p>
 * [**EYES**](https://bigricedumpling.github.io/bigricedumpling0000.github.io/eyes)
 
