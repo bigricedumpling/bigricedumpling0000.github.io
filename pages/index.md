@@ -11,7 +11,7 @@ encrypted_text: true
 permalink: /
 ---
 
-![img-smpl]({{site.url}}{{site.baseurl}}{{site.assets_path}}/img/img3.png)
+![img-smpl]({{site.url}}{{site.baseurl}}{{site.assets_path}}/img/img4.png)
 #  ILLUSORY THEATRE OF THE EVERYDAY - 장수청 
 
 
