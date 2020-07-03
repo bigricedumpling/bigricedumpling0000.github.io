@@ -12,7 +12,7 @@ permalink: /
 ---
 
 #  ILLUSORY THEATRE OF THE EVERYDAY - 장수청 
-![img-smpl]({{site.url}}{{site.baseurl}}{{site.assets_path}}/img/img.png)
+![img-smpl]({{site.url}}{{site.baseurl}}{{site.assets_path}}/img/img1.png)
 
 ##  Vitual Eyes👁虚拟之眼
 
