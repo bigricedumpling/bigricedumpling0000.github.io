@@ -5,7 +5,7 @@ var cols, rows;
 
 function setup() {
 	var width = 1024;
-  var height = 768;
+  var height = 600;
   
   createCanvas(windowWidth, windowHeight,WEBGL);
   background(0);
@@ -13,18 +13,19 @@ function setup() {
   
   video = createCapture(VIDEO);
 	video.hide();
-  video.size(windowWidth, windowHeight);
+  video.size(width, height);
   
 }
 
 
 function draw() {
+	
   scale(-1,1);
-  background(255);
+  background(0);
   //noStroke();
   //fill(0);
-  cols = windowWidth/cellsize;             // Calculate # of columns
-  rows = windowHeight/cellsize;
+  cols = width/cellsize;             // Calculate # of columns
+  rows = height/cellsize;
   if (video.width > 0) {
     let img = video.get(0, 0, video.width, video.height);
     img.loadPixels();
@@ -40,7 +41,7 @@ function draw() {
         var z = (mouseX/width)* brightness(c)*2 ;
         // Translate to the location, set fill and stroke, and draw the rect
         push();
-        translate(x-785,y-350,z);
+        translate(x-500,y-300,z);
         noStroke();
 			
 				
@@ -49,6 +50,7 @@ function draw() {
         
         rect(0,0,cellsize,cellsize);
         pop();
+			
     //int step = 15;
     //for (int y = step; y < img.height; y += step) {
       //for (int x = step; x < img.width; x += step) {
