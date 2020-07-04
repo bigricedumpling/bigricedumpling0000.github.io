@@ -16,7 +16,7 @@ function setup() {
   var height = 600;
   var w = windowWidth;
 	var h =windowHeight;
-  createCanvas(windowWidth, windowHeight,WEBGL);
+  createCanvas(1240, 1240,WEBGL);
   background(0);
   //frameRate(600);
   
