@@ -7,7 +7,7 @@ function setup() {
 	var width = 1024;
   var height = 600;
   
-  createCanvas(windowWidth, windowHeight,WEBGL);
+  createCanvas(1240, 1240,WEBGL);
   background(0);
   //frameRate(600);
   
@@ -19,7 +19,7 @@ function setup() {
 
 
 function draw() {
-	
+	translate(-500,-300);
   scale(-1,1);
   background(0);
   //noStroke();
@@ -41,7 +41,7 @@ function draw() {
         var z = (mouseX/width)* brightness(c)*2 ;
         // Translate to the location, set fill and stroke, and draw the rect
         push();
-        translate(x-500,y-300,z);
+        translate(x,y,z);
         noStroke();
 			
 				

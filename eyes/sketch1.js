@@ -8,9 +8,9 @@ let maxNoise = 200; // maximal value for the parameter "noisiness" for the blobs
 
 function setup(){
 
-   createCanvas(windowWidth,windowHeight,WEBGL);
-   var width = windowWidth;
-	 var height = windowHeight;
+   createCanvas(1240,1240,WEBGL);
+   var width = 1240;
+	 var height = 1240;
 	 colorMode(HSB, 1);
 	 //angleMode(DEGREES);
    //noFill();
