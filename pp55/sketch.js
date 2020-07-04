@@ -4,14 +4,14 @@ var cellsize = 20; // Dimensions of each cell in the grid
 var cols, rows;
 var w = 1240;
 var h =1240;
-//let myFont;
+let myFont;
 
-//function preload() {
-  //myFont = loadFont('FontAwesome.otf');
-//}
+function preload() {
+  myFont = loadFont('FontAwesome.otf');
+}
 function setup() {
-	//textFont(myFont);
-	//textSize(36);
+	textFont(myFont);
+	textSize(36);
 	var width = 1024;
   var height = 600;
   var w = 1400;
@@ -95,12 +95,12 @@ function keyPressed() {
 
 
 function button() {
-	//textFont(myFont);
-	//textSize(24);	
-  //text("UP",4*w/10, 3*h/10);
-	//text("DOWN",4*w/10, 3.5*h/10);
-	//rect(9*width/10, 8*height/10, 60, 20,2,2);
-	//rect(9*width/10, 8.5*height/10, 60, 20,2,2);
+	textFont(myFont);
+	textSize(24);	
+  text("UP",4*w/10, 3*h/10);
+	text("DOWN",4*w/10, 3.5*h/10);
+	rect(9*width/10, 8*height/10, 60, 20,2,2);
+	rect(9*width/10, 8.5*height/10, 60, 20,2,2);
 	if((mouseX >9*w/10) && (mouseX<9*w/10+60) && (mouseY > 8*h/10) && (mouseY < 8*h/10+20)){
     fill(255);
 	  rect(4*w/10, 3*h/10, 60, 20,2,2);
