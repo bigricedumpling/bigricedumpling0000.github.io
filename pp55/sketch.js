@@ -74,7 +74,8 @@ function draw() {
     }
   }
 	scale(-1,1);
-	button();
+  button();
+  scale(-1,1)
 }
 
 //ignore this, initially
