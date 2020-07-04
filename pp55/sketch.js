@@ -2,11 +2,18 @@
 let capture;
 var cellsize = 20; // Dimensions of each cell in the grid
 var cols, rows;
+var w = 1240;
+var h =1240;
+let myFont;
 
+function preload() {
+  myFont = loadFont('assets/fonts/FontAwesome.otf');
+}
 function setup() {
 	var width = 1024;
   var height = 600;
-  
+  var w = 1400;
+	var h =1240
   createCanvas(1240, 1240,WEBGL);
   background(0);
   //frameRate(600);
@@ -19,9 +26,10 @@ function setup() {
 
 
 function draw() {
-	translate(-500,-300);
+	//translate(500,300);
   scale(-1,1);
   background(0);
+	
   //noStroke();
   //fill(0);
   cols = width/cellsize;             // Calculate # of columns
@@ -41,7 +49,7 @@ function draw() {
         var z = (mouseX/width)* brightness(c)*2 ;
         // Translate to the location, set fill and stroke, and draw the rect
         push();
-        translate(x,y,z);
+        translate(x-500,y-300,z);
         noStroke();
 			
 				
@@ -63,6 +71,8 @@ function draw() {
       }
     }
   }
+	scale(-1,1);
+	button();
 }
 
 //ignore this, initially
@@ -78,4 +88,46 @@ function keyPressed() {
     cellsize = cellsize-3;
   }
   
+}
+
+
+function button() {
+  textFont(myFont);
+	textSize(24);	
+  text("UP",4*w/10, 3*h/10);
+	text("DOWN",4*w/10, 3.5*h/10);
+	//rect(9*width/10, 8*height/10, 60, 20,2,2);
+	//rect(9*width/10, 8.5*height/10, 60, 20,2,2);
+	if((mouseX >9*w/10) && (mouseX<9*w/10+60) && (mouseY > 8*h/10) && (mouseY < 8*h/10+20)){
+    fill(255);
+	  rect(4*w/10, 3*h/10, 60, 20,2,2);
+	}
+	else{
+		fill(100);
+		rect(4*w/10, 3*h/10, 60, 20,2,2);
+  }
+	if((mouseX >9*w/10) && (mouseX<9*w/10+60) && (mouseY > 8.5*h/10) && (mouseY < 8.5*h/10+20)){
+    fill(255);
+	  rect(4*w/10, 3.5*h/10, 60, 20,2,2);
+		}
+	else{
+		fill(100);
+		rect(4*w/10, 3.5*h/10, 60, 20,2,2);
+  }
+	//fill(255);
+	
+	
+}
+function mousePressed() {
+ if((mouseX >9*width/10) && (mouseX<9*width/10+60) && (mouseY > 8*height/10) && (mouseY < 8*height/10+20)){
+    cellsize = cellsize+3;
+	}
+	
+	if((mouseX >9*width/10) && (mouseX<9*width/10+60) && (mouseY > 8.5*height/10) && (mouseY < 8.5*height/10+20)){
+    cellsize = cellsize-3;
+		}
+	
+	//fill(255);
+	
+	
 }
