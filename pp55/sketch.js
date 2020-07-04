@@ -14,8 +14,8 @@ function setup() {
 	//textSize(36);
 	var width = 1024;
   var height = 600;
-  var w = 1400;
-	var h =1240
+  var w = windowWidth;
+	var h =windowHeight;
   createCanvas(windowWidth, windowHeight,WEBGL);
   background(0);
   //frameRate(600);
