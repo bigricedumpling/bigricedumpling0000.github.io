@@ -38,7 +38,7 @@ function draw(){
 	pop();
     push();
 	strokeWeight(10);
-	rotateX(dirX,dirY)
+	rotateZ(dirX,dirY)
 	ellipse(0,0,r*2,r*2);
 	pop();
 
