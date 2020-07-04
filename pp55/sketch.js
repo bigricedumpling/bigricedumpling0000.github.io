@@ -10,7 +10,7 @@ var h =1240;
 function setup() {
 	var width = 1024;
   var height = 600;
-  var w = 1400;
+  var w = 1240;
 	var h =1240
   createCanvas(1240, 1240,WEBGL);
   background(0);
